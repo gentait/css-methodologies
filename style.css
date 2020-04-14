@@ -141,3 +141,176 @@
   border-color: currentColor;
   color: #e25c00;
 }
+/*--------------------------------
+  アイコン付き小ボタン
+--------------------------------*/
+.beforeIconBtn {
+  position: relative;
+  display: inline-block;
+  padding: 0.2em 0.3em;
+  border: 1px solid currentColor;
+  color: #e25c00;
+  text-decoration: none;
+  transition: 0.25s;
+}
+.beforeIconBtn:focus,
+.beforeIconBtn:hover {
+  background-color: #e25c00;
+  color: #fff;
+}
+.beforeIconBtn::before {
+  display: inline-block;
+  margin-right: 0.5em;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+.beforeIconBtn--download::before {
+  content: "\f019";
+}
+.beforeIconBtn--zoom::before {
+  content: "\f00e";
+  transform: translateY(-6%);
+}
+/*--------------------------------
+  アイコン
+--------------------------------*/
+.beforeIcon::before {
+  display: inline-block;
+  margin-right: 0.3em;
+  color: #e25c00;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+}
+.beforeIcon--pdf::before {
+  content: "\f1c1";
+}
+.beforeIcon--excel::before {
+  content: "\f1c3";
+}
+.beforeIcon--powerPoint::before {
+  content: "\f1c4";
+}
+.beforeIcon--checkSquare::before {
+  content: "\f14a";
+}
+.beforeIcon--chevronLeft::before {
+  content: "";
+  width: 0.375em;
+  height: 0.375em;
+  border-bottom: 0.125em solid #e25c00;
+  border-left: 0.125em solid #e25c00;
+  transform: rotate(45deg) translateY(-30%);
+}
+.afterIcon::after {
+  display: inline-block;
+  margin-left: 0.3em;
+  color: #e25c00;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+}
+.afterIcon--chevronRight::after {
+  content: "";
+  width: 0.375em;
+  height: 0.375em;
+  border-top: 0.125em solid #e25c00;
+  border-right: 0.125em solid #e25c00;
+  transform: rotate(45deg);
+}
+/*--------------------------------
+  ラベル
+--------------------------------*/
+.label {
+  display: inline-block;
+  padding: 0.2em 0.3em;
+  background-color: #e25c00;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: bold;
+  border: 2px solid transparent;
+}
+.label--warning {
+  background-color: #f1de00;
+  color: #000;
+}
+.label--link {
+  text-decoration: none;
+  transition: 0.25s;
+}
+.label--link:focus,
+.label--link:hover {
+  background-color: #fff;
+  border-color: currentColor;
+  color: #e25c00;
+}
+/*--------------------------------
+  楕円ラベル
+--------------------------------*/
+.roundedLabel {
+  display: inline-block;
+  padding: 0.3em 0.9em;
+  background-color: #e25c00;
+  border-radius: 1em;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+/*--------------------------------
+  見出し
+--------------------------------*/
+.lv1Heading {
+  padding: 30px 10px;
+  background-color: #e25c00;
+  color: #fff;
+  font-size: 1.75rem;
+  text-align: center;
+}
+.lv1Heading__inner {
+  position: relative;
+  display: inline-block;
+  transform: translateY(-20%);
+}
+.lv1Heading__inner::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 80px;
+  height: 1px;
+  background-color: currentColor;
+  transform: translateX(-50%);
+}
+.lv2Heading {
+  padding-bottom: 10px;
+  border-bottom: 4px solid #e25c00;
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+.lv3Heading {
+  padding-bottom: 6px;
+  border-bottom: 2px solid #e25c00;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.lv4Heading {
+  padding-left: 6px;
+  border-left: 2px solid #e25c00;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.lv5Heading {
+  color: #e25c00;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+.lv6Heading {
+  font-size: 1.125rem;
+}
+/*--------------------------------
+  注釈
+--------------------------------*/
+.cautionText {
+  color: #d40152;
+}
+.noteText {
+  font-size: 0.75rem;
+}
